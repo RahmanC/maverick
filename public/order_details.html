@@ -6,62 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Order Details</title> -->
     <link rel="stylesheet" href="/static/css/order_details.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     
     <title>MDS | Order Details</title>
 
-    <!-- Bootstrap -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="static/css/animate.css">
-    <link rel="stylesheet" href="static/css/animate.min.css"> -->
-    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="icon" href="/static/img/logo.png">
-
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-
-
-
 </head>
 <body>
-     <!-- navbar -->
-    <nav class="navbar bg_blue">
-    <div class="container">
-        <div class="">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#"><img src="/static/img/maverick_logo.png" alt="Maverick-Digital-Store"></a>
+     <!-- copy from here -->
+    <!-- navbar -->
+    <main>
+      <!-- header opening tag -->
+      <header>
+        <!-- navigation opening tag -->
+        <nav class="navigation-contents">
+          <!-- navbar brand opening tag -->
+          <div class="navbar-brand-container">
+            <div class="navigation-image-container">
+              <img src="../static/img/maverick_logo.png" alt="" />
+            </div>
+            <div class="navigation-item-container1">
+              <img
+                src="../static/img/icon-hamburger.svg"
+                class="hamburger"
+                alt=""
+                id="nav-bar-icon"
+              />
+            </div>
           </div>
-          <ul class="nav navbar-nav ">
-            <li ><a href="/public/product_category.html" class="white p7">CONSOLES </a></li>
-            <li><a href="/public/product_category.html" class="white p7">LAPTOPS</a></li>
-            <li><a href="/public/product_category.html" class="white p7">WATCHES</a></li>
-            <li><a href="/public/product_category.html" class="white p7">ACCCESSORIES</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><h4><span class="fa fa-heart white fa-bg"></span></h4> </a></li>
-            <li><a href="#"> <h4><span class="fa fa-cart-plus white fa-bg"></span></h4> </a></li>
-            <li><a href="#"><h4><span class="fa fa-search white fa-bg" data-toggle="modal" data-target="#myModal"></span></h4> </a></li>
-            <!-- <li><a href=""><i class="fa fa-search white fa-bg" data-toggle="modal" data-target="#myModal"></i></a></li> -->
-            <li><a href="#" class="bg_white left_radius active p8" ><span class=" bg_white " ></span> LOG IN/REGISTER </a></li>
-            <!-- <li><a href="#" class="bg_white right_radius p8"><span ></span>REGISTER </a></li> -->
-            
-
-          </ul>
-        </div>
-      </div>
-    </nav>
+          <!-- closing tag for navbar brand -->
+          <!-- opening tag for navigation-category-content -->
+          <div class="navigation-category-content" id="navigation">
+            <ul class="nav-links">
+              <li class="nav-links-item"><a href="">CONSOLES</a></li>
+              <li class="nav-links-item"><a href="">WATCHES</a></li>
+              <li class="nav-links-item"><a href="">ACCESORIES</a></li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation category -->
+          <!-- opening tag for navigation icons -->
+          <div class="navigation-icons" id="navigation1">
+            <ul class="icon-links">
+              <li class="icon-links-item" >
+                <i class="fa fa-heart" style="font-size: 36px"></i>
+              </li>
+              <li class="icon-links-item">
+                <i class="fa fa-shopping-cart" style="font-size: 36px"></i>
+              </li>
+              <li class="icon-links-item">
+                <i class="fa fa-search" style="font-size: 36px"></i>
+              </li>
+              <li class="icon-links-item">
+                <button type="button" class="btn btn-light">
+                  LOGIN/REGISTER
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation-icons -->
+        </nav>
+        <!-- closing tag for navigation -->
+      </header>
+      <!-- to here for the navbar. head to the css -->
 
 
      <div class="navigation mt-3 pl-5">
@@ -103,92 +123,107 @@
     <div class="details">
         <div class="product">
             <h3>Product</h3>
-            <li>
-                <ul>Product A x 2</ul>
-                <ul>Subb-Total</ul>
-                <ul>Tax</ul>
-                <ul>Shipping</ul>
-                <ul>Payment Method</ul>
-                <ul>Total</ul>
-            </li>
+            <ul>
+                <li>Product A x 2</li>
+                <li>Subb-Total</li>
+                <li>Tax</li>
+                <li>Shipping</li>
+                <li>Payment Method</li>
+                <li>Total</li>
+            </ul>
         </div>
         <div class="sub-total">
             <h3>Sub-total</h3>
-            <li>
-                <ul>#2,000</ul>
-                <ul>#4,000</ul>
-                <ul>#100</ul>
-                <ul>#500</ul>
-                <ul>Debit/Credit Card</ul>
-                <ul> <b> #6,600</b></ul>
-            </li>
+            <ul>
+                <li>#2,000</li>
+                <li>#4,000</li>
+                <li>#100</li>
+                <li>#500</li>
+                <li>Debit/Credit Card</li>
+                <li> <b> #6,600</b></li>
+            </ul>
         </div>
     </div>
 
-    <!-- footer -->
-            <footer>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-3">
-                    <h5><b>Contact Us</b></h5>
-                    <ul>
-                      <li><i class="fa fa-home pt3"></i> Unity Crescent Ikoyi GRA, Ikoyi, Lagos</li>
-                      <li><i class="fa fa-envelope pt3"></i> info@prosport.com</li>
-                      <li><i class="fa fa-phone pt3"></i> +234 801 2345 678</li>
-                    </ul>
-                  </div>
+    
+   <footer>
+      <div class="footer-contents">
+        <div class="contact-us-container">
+          <h3 class="footer-title mt-4">Contact Us:</h3>
+
+          <p class="footer-description mt-4">
+            <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, 
+            Ikeja GRA,Lagos
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-envelope" id="envelope"></i></span
+            >info@mds.com
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-phone mr-3"></i></span>08033445566
+          </p>
+        </div>
+
+        <div class="useful-links-container">
+          <h3 class="footer-title mt-4">Useful Links:</h3>
+
+          <ul class="footer-links">
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Home </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> About Us </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Products </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Wishlist </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Cart </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-contents mt-4">
+            <h3 class="footer-title">Social Media</h3>
+            <a href="#" class="fa fa-twitter" id="twitter"></a>
+            <a href="#" class="fa fa-facebook" id="facebook"></a>
+            <a href="#" class="fa fa-instagram" id="instagram"></a>
+          </div>
+        </div>
+
+        <div class="subscribe-container">
+          <p class="footer-description1 mt-4">
+            Subscribe To Our Newsletter <br />
+            To Stay Up-To-Date <br />
+            With Latest Products.
+          </p>
+
+          <div class="col-9" id="form-container">
+            <div class="input-group">
+              <div class="input-group-prepend"></div>
+              <input
+                type="text"
+                class="form-control"
+                id="inlineFormInputGroupUsername"
+                placeholder="Email"
+              />
+              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+            </div>
+          </div>
+        </div>
         
-                  <div class="col-md-3">
-                    <h5>Useful Links</h5>
-                    <ul>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Home</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> About Us</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Product</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Wishlist</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Cart</a></li>
-                    </ul>
-                  </div>
-        
-                  <div class="col-md-2">
-                    <h5>Social Media</h5>
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter "></i> Twitter</a></li>
-                      <li><a href="#"><i class="fa fa-facebook "></i> Facebook </a></li>
-                      <li><a href="#"><i class="fa fa-instagram "></i> Instagram </a></li>
-                      
-                    </ul>
-                  </div>
-        
-                  <div class="col-md-4">
-                    <form class="" action="#" method="post">
-                      <div class="form-group">
-                        <h5>Enter email to subscribe to our newsletter.</h5>
-                        <div class="email-box">
-                          <input type="text" class="email-box__input" placeholder="Email Address" />
-                          <button type="button" class="email-box__button"><i class="fa fa-envelope-o"></i></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+      </div>
+      <div class="">
+        <div class="text-center copy mt-4">
+                 
+                  Copyright &copy; 2021 MDS. All Rights Reserved.
                 </div>
-                <hr>
-                <div class="row">
-                  <div class="text-center">
-                    <p>Copyright &copy; 2021 MDS. All Rights Reserved.</p>
-                  </div>
-              
-                </div>
-        
-                <!-- <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
-                    <form class="" action="#" method="post">
-                      <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Enter e-mail">
-                      </div>
-                    </form>
-                  </div>
-                </div> -->
+            
               </div>
-            </footer>
+    </footer>
 </body>
 </html>
